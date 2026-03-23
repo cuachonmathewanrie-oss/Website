@@ -1,0 +1,71 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  /* Gradient background instead of plain white */
+  background: linear-gradient(to right, #12419a, #2a5298);
+  color: white; /* Makes text readable on dark bg */
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 50px;
+}
+
+.hero-image img {
+  width: 250px;
+  border-radius: 15px;
+  border: 3px solid white;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 span {
+  color: #f9d423; /* Highlight your name */
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #f9d423;
+  color: #1e3c72;
+  font-weight: bold;
+}
+
+.hero-text button:hover {
+  background: #ffc107;
+}
+
+.socials a {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.socials a:hover {
+  color: #f9d423;
+}
+
+.about {
+  padding: 50px;
+  background: rgba(0,0,0,0.4); /* Slight dark overlay for readability */
+}
+
+.about-container h2,
+.about-container h3 {
+  color: #f9d423;
+}
+
+.about-container ul li {
+  margin: 5px 0;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Music Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🎵 BACKGROUND MUSIC -->
+  <audio id="bgMusic" loop>
+    <source src="bgmusic.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <!-- LEFT SIDE (IMAGE NOW HERE) -->
+    <div class="hero-image">
+      <img src="mathew.jpg" alt="My Photo">
+    </div>
+
+    <!-- RIGHT SIDE (TEXT) -->
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Mathew Anrie R.</span><br>Cuachon</h1>
+      <h3>BSIT-1-A</h3>
+
+      <p>
+        Passionate about creating music, performing live, and expressing emotions
+        through sound. I love exploring different genres and sharing my vibe with the world.
+      </p>
+
+      <!-- BUTTON SCROLL -->
+      <a href="#about">
+        <button>👤 About Me</button>
+      </a>
+
+      <!-- 🎵 PLAY MUSIC BUTTON -->
+      <br><br>
+      <button onclick="playMusic()">▶ Play Music</button>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <center><h2>About Me</h2></center>
+
+      <center><p>
+        Hi! I'm Mathew Anrie Cuachon, a BSIT student who enjoys music, creativity,
+        and exploring technology.
+         I love expressing myself through different forms
+        of art and learning new skills every day.
+      </p></center>
+
+      <h3>🎯 My Hobbies</h3>
+      <ul>
+        <li>🎮 Playing Video Games</li>
+        <li>🎧 Listening to Music</li>
+        <li>🎸 Playing Instruments</li>
+        <li>💻 Coding / Programming</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SCRIPT -->
+  <script>
+    function playMusic() {
+      const music = document.getElementById("bgMusic");
+      music.play();
+    }
+  </script>
+
+</body>
+</html>
